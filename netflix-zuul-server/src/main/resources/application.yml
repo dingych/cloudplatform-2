@@ -24,3 +24,9 @@ zuul:
 ribbon:
   ReadTimeout: 10000
   ConnectTimeout: 10000
+
+##项目信息
+info:
+  name: ${spring.application.name}
+  server:
+    port: ${server.port}
