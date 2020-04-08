@@ -1,0 +1,26 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8020/eureka/
+server:
+  port: 8022
+spring:
+  cloud:
+    inetutils:
+      timeout-seconds: 100
+  application:
+    name: service-zuul
+  main:
+    allow-bean-definition-overriding: true #当遇到同样名字的时候，是否允许覆盖注册
+zuul:
+  routes:
+    config:
+      path: /config/**
+      serviceId: config-server
+  host:
+    connect-timeout-millis: 600000
+    socket-timeout-millis: 600000
+
+ribbon:
+  ReadTimeout: 10000
+  ConnectTimeout: 10000

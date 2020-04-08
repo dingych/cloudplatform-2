@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    inetutils:
+      timeout-seconds: 10
+  application:
+    name: config-server
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8020/eureka/

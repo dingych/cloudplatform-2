@@ -4,12 +4,18 @@ spring:
   application:
     name: netflix-eureka-server
     instance_id: eureka
+  cloud:
+    inetutils:
+      timeout-seconds: 10
 eureka:
   client:
     register-with-eureka: false     #false表示不向注册中心注册自己。
     fetch-registry: false           #false表示自己端就是注册中心，我的职责就是维护服务实例，并不需要去检索服务
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
   instance:
-    metadataMap:
-      instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+    hostname: eureka-server
+  server:
+    enable-self-preservation: false #关闭保护模式
   #server:
     #enable-self-preservation: false   #Eureka服务端关闭心跳连接测试

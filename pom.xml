@@ -11,6 +11,9 @@
 
     <modules>
         <module>netflix-eureka-server</module>
+        <module>cloud-config</module>
+        <module>netflix-zuul-server</module>
+        <module>common</module>
     </modules>
     <properties>
         <java.version>1.8</java.version>
