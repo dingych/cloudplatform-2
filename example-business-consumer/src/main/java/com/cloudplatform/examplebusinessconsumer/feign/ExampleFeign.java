@@ -17,6 +17,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @FeignClient(value = "business")
 public interface ExampleFeign {
+    /**
+     * feign调用负载均衡测试
+     * @param id
+     * @return
+     */
     @RequestMapping(value = "/tbBuUser/selectOne")
     R selectOne(@RequestParam("id") Integer id);
 }

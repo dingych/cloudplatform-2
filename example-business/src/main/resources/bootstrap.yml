@@ -20,6 +20,8 @@ spring:
       uri: http://localhost:8021
     inetutils:
       timeout-seconds: 10
+    refresh:
+      refreshable: none
 #  datasource:
 #    url: jdbc:mysql://47.101.204.74:33306/db_cloudplatform?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
 #    driver-class-name: com.mysql.jdbc.Driver
@@ -40,7 +42,7 @@ spring:
 
 
 server:
-  port: 8041
+  port: 8044
 ##项目信息
 info:
   name: ${spring.application.name}

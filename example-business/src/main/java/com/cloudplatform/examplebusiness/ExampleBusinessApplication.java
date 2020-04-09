@@ -6,10 +6,17 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
+/**
+ *
+ *@description: 简单业务服务提供者
+ *@author: WuDG
+ *@time: 2020/4/9 12:29
+ *
+ */
+
 @SpringBootApplication
 @EnableEurekaClient
 @EnableDiscoveryClient
-
 @MapperScan("com.cloudplatform.examplebusiness.dao.*")
 public class ExampleBusinessApplication {
 

@@ -16,6 +16,6 @@
  \   \ .'                `---`     :  ,      .-./|   ,.'      `---'.|              `--''                      |   | ,'      `---`     |   |.'    |   ;/
   `---`                             `--`----'    '---'          `---`                                         `----'                  `---'      '---'
 开发人员列表:
-WuDG,https://github.com/WuDg/
-MiniQie
+WuDG,1490727316@qq.com,https://github.com/WuDg/
+MiniQie,1459049487@qq.com,https://github.com/minQie/
 
