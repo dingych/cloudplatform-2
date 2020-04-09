@@ -1,39 +1,35 @@
-spring:
-  cloud:
-    inetutils:
-      timeout-seconds: 10
-  application:
-    name: business-example
-  datasource:
-    url: jdbc:mysql://47.101.204.74:33306/db_cloudplatform?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
-    driver-class-name: com.mysql.jdbc.Driver
-    username: root
-    password: 5555
-    initialSize: 5
-    minIdle: 5
-    maxActive: 100
-    maxWait: 60000
-    timeBetweenEvictionRunsMillis: 60000
-    minEvictableIdleTimeMillis: 300000
-    validationQuery: SELECT 1
-    testWhileIdle: true
-    testOnBorrow: true
-    testOnReturn: false
-    filters: stat,wall,log4j
-    logSlowSql: true
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8020/eureka/
-server:
-  port: 8041
-##项目信息
-info:
-  name: ${spring.application.name}
-  server:
-    port: ${server.port}
-mybatis:
-  mapper-locations: classpath:mapper/*.xml
-  type-aliases-package: com.cloudplatform.examplebusiness.entity
-  configuration:
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#spring:
+#  cloud:
+#    inetutils:
+#      timeout-seconds: 10
+#  application:
+#    name: business-example
+#  datasource:
+#    url: jdbc:mysql://47.101.204.74:33306/db_cloudplatform?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
+#    driver-class-name: com.mysql.jdbc.Driver
+#    username: root
+#    password: 5555
+#    initialSize: 5
+#    minIdle: 5
+#    maxActive: 100
+#    maxWait: 60000
+#    timeBetweenEvictionRunsMillis: 60000
+#    minEvictableIdleTimeMillis: 300000
+#    validationQuery: SELECT 1
+#    testWhileIdle: true
+#    testOnBorrow: true
+#    testOnReturn: false
+#    filters: stat,wall,log4j
+#    logSlowSql: true
+#server:
+#  port: 8041
+###项目信息
+#info:
+#  name: ${spring.application.name}
+#  server:
+#    port: ${server.port}
+#mybatis:
+#  mapper-locations: classpath:mapper/*.xml
+#  type-aliases-package: com.cloudplatform.examplebusiness.entity
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
