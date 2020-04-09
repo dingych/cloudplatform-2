@@ -1,7 +1,7 @@
 package com.cloudplatform.examplebusiness.entity;
 
-import java.util.Date;
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  * (TbBuUser)实体类

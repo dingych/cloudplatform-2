@@ -27,7 +27,7 @@ public class TbBuUserController {
      * @param id 主键
      * @return 单条数据
      */
-    @GetMapping("selectOne")
+    @RequestMapping("selectOne")
     public TbBuUser selectOne(Integer id) {
         return this.tbBuUserService.queryById(id);
     }
