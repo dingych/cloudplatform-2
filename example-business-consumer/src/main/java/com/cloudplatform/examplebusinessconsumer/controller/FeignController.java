@@ -10,6 +10,7 @@ package com.cloudplatform.examplebusinessconsumer.controller;/**
 import com.cloudplatform.common.utils.R;
 import com.cloudplatform.examplebusinessconsumer.feign.ExampleFeign;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.loadbalancer.LoadBalancerClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -27,6 +28,9 @@ public class controller {
 
     @Autowired
     private ExampleFeign exampleFeign;
+
+    @Autowired
+    private LoadBalancerClient loadBalancerClient;
 
     @GetMapping("/businessOne")
     public R businessOne(@RequestParam("id") Integer id){
