@@ -13,6 +13,9 @@
         <module>netflix-eureka-server</module>
         <module>cloud-config</module>
         <module>netflix-zuul-server</module>
+        <module>redis-server</module>
+        <module>spring-shell</module>
+        <module>springboot-websocket</module>
         <module>common</module>
     </modules>
     <properties>

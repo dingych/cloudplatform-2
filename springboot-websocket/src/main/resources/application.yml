@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: websocket
+
+
+server:
+  port: 8046
+##项目信息
+info:
+  name: ${spring.application.name}
+  server:
+    port: ${server.port}
