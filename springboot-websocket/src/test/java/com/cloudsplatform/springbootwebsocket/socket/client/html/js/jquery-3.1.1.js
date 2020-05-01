@@ -3630,7 +3630,7 @@
                                         }
                                     },
 
-                                    // Only normal processors (resolve) catch and reject exceptions
+                                    // Only static_proxy processors (resolve) catch and reject exceptions
                                     process = special ?
                                         mightThrow :
                                         function() {
@@ -3906,7 +3906,7 @@
             // Remember that the DOM is ready
             jQuery.isReady = true;
 
-            // If a normal DOM Ready event fired, decrement, and wait if need be
+            // If a static_proxy DOM Ready event fired, decrement, and wait if need be
             if ( wait !== true && --jQuery.readyWait > 0 ) {
                 return;
             }
@@ -6497,8 +6497,8 @@
                 val = curCSS( elem, name, styles );
             }
 
-            // Convert "normal" to computed value
-            if ( val === "normal" && name in cssNormalTransform ) {
+            // Convert "static_proxy" to computed value
+            if ( val === "static_proxy" && name in cssNormalTransform ) {
                 val = cssNormalTransform[ name ];
             }
 
@@ -7955,7 +7955,7 @@
 
                 hooks = jQuery.valHooks[ this.type ] || jQuery.valHooks[ this.nodeName.toLowerCase() ];
 
-                // If set returns undefined, fall back to normal setting
+                // If set returns undefined, fall back to static_proxy setting
                 if ( !hooks || !( "set" in hooks ) || hooks.set( this, val, "value" ) === undefined ) {
                     this.value = val;
                 }

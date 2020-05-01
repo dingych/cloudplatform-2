@@ -1,0 +1,31 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8020/eureka/
+spring:
+  application:
+    name: sms-service
+  cloud:
+    config:
+      name: sms-service
+      profile: dev
+      uri: http://localhost:8021
+    inetutils:
+      timeout-seconds: 10
+    refresh:
+      refreshable: none
+management:
+  endpoint:
+    shutdown:
+      enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+server:
+  port: 8047
+##项目信息
+info:
+  name: ${spring.application.name}
+  server:
+    port: ${server.port}

@@ -17,6 +17,12 @@ zuul:
     config:
       path: /config/**
       serviceId: config-server
+    business:
+      path: /business/**
+      serviceId: business
+    business-consumer:
+      path: /business-consumer/**
+      serviceId: business-consumer
   host:
     connect-timeout-millis: 600000
     socket-timeout-millis: 600000

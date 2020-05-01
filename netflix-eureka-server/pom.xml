@@ -39,8 +39,8 @@
         </dependency>
         <!--暴露各种指标-->
         <!--<dependency>-->
-            <!--<groupId>org.springframework.boot</groupId>-->
-            <!--<artifactId>spring-boot-starter-actuator</artifactId>-->
+            <!--<groupId>org.springframework.com</groupId>-->
+            <!--<artifactId>cloudplatform-com-starter-actuator</artifactId>-->
         <!--</dependency>-->
 
         <dependency>

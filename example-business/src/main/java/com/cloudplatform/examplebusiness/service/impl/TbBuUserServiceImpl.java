@@ -4,6 +4,8 @@ import com.cloudplatform.examplebusiness.entity.TbBuUser;
 import com.cloudplatform.examplebusiness.dao.TbBuUserDao;
 import com.cloudplatform.examplebusiness.service.TbBuUserService;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+import org.springframework.transaction.interceptor.TransactionAspectSupport;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -15,6 +17,8 @@ import java.util.List;
  * @since 2020-04-09 01:07:47
  */
 @Service("tbBuUserService")
+@Transactional(rollbackFor = { Exception.class })
+
 public class TbBuUserServiceImpl implements TbBuUserService {
     @Resource
     private TbBuUserDao tbBuUserDao;
@@ -39,6 +43,7 @@ public class TbBuUserServiceImpl implements TbBuUserService {
      */
     @Override
     public List<TbBuUser> queryAllByLimit(int offset, int limit) {
+        TransactionAspectSupport.currentTransactionStatus().setRollbackOnly();
         return this.tbBuUserDao.queryAllByLimit(offset, limit);
     }
 

@@ -1,7 +1,9 @@
 package com.cloudplatform.examplebusinessconsumer;
 
+import com.github.xiaoymin.swaggerbootstrapui.annotations.EnableSwaggerBootstrapUI;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
@@ -18,9 +20,10 @@ import org.springframework.web.client.RestTemplate;
  */
 
 @EnableEurekaClient
-@SpringBootApplication
+@SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
 @EnableDiscoveryClient
 @EnableFeignClients(basePackages = { "com.cloudplatform.examplebusinessconsumer.feign" })
+@EnableSwaggerBootstrapUI
 
 public class ExampleBusinessConsumerApplication {
     @Bean

@@ -20,24 +20,6 @@ spring:
       uri: http://localhost:8021
     inetutils:
       timeout-seconds: 10
-#  datasource:
-#    url: jdbc:mysql://47.101.204.74:33306/db_cloudplatform?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
-#    driver-class-name: com.mysql.jdbc.Driver
-#    username: root
-#    password: 5555
-#    initialSize: 5
-#    minIdle: 5
-#    maxActive: 100
-#    maxWait: 60000
-#    timeBetweenEvictionRunsMillis: 60000
-#    minEvictableIdleTimeMillis: 300000
-#    validationQuery: SELECT 1
-#    testWhileIdle: true
-#    testOnBorrow: true
-#    testOnReturn: false
-#    filters: stat,wall,log4j
-#    logSlowSql: true
-
 
 server:
   port: 8042

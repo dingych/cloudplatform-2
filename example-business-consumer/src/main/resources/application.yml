@@ -1,4 +1,4 @@
-#spring:
+#cloudplatform:
 #  cloud:
 #    inetutils:
 #      timeout-seconds: 10
@@ -25,7 +25,7 @@
 #  port: 8041
 ###项目信息
 #info:
-#  name: ${spring.application.name}
+#  name: ${cloudplatform.application.name}
 #  server:
 #    port: ${server.port}
 #mybatis:
