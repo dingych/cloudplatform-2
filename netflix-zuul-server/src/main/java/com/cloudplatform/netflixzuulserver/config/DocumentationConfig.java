@@ -30,6 +30,9 @@ public class DocumentationConfig implements SwaggerResourcesProvider {
         //一个 SwaggerResource对应一个微服务 ： 参数： 服务中文名 ， 路径：/zuul前缀/服务的routes访问路径//v2/api-docs  ； 版本
         resources.add(swaggerResource("业务消费服务", "/business-consumer/api-docs", "2.0"));
         resources.add(swaggerResource("业务服务", "/business/api-docs", "2.0"));
+        resources.add(swaggerResource("websocket服务", "/websocket/api-docs", "2.0"));
+        resources.add(swaggerResource("短信服务", "/sms-server/api-docs", "2.0"));
+        resources.add(swaggerResource("redis服务", "/redis-server/api-docs", "2.0"));
         return resources;
 
     }

@@ -15,12 +15,12 @@ import java.util.List;
  **/
 public class Main {
     public static void main(String[] args) throws InterruptedException {
-        List<People> all = new ArrayList<>();
-        while(true){
-            all.add(new People());
-            Thread.sleep(10);
-        }
-
+//        List<People> all = new ArrayList<>();
+//        while(true){
+//            all.add(new People());
+//            Thread.sleep(10);
+//        }
+        test1();
     }
     /**
      *静态测试方法
@@ -29,5 +29,13 @@ public class Main {
         int c;
         c = a+ b;
         return c;
+    }
+    public static void test1() {
+        String name = "沉默王二";
+        // \u000dname="沉默王三";
+        // \u000d
+        // \u000dint a=3;
+        // \u000dSystem.out.println(a);
+        System.out.println(name);
     }
 }

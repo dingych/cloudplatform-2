@@ -15,7 +15,7 @@ import java.util.List;
 @Component
 public class LoginFilter extends ZuulFilter {
 
-    public static final List<String> PASS_STR = Arrays.asList("config","business","business-consumer");
+    public static final List<String> PASS_STR = Arrays.asList("config","business","business-consumer","redis-server","sms-server","websocket");
 
     private static Logger log = LoggerFactory.getLogger(LoginFilter.class);
 

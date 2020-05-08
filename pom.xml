@@ -16,7 +16,6 @@
         <module>redis-server</module>
         <module>spring-shell</module>
         <module>springboot-websocket</module>
-        <module>Spring-activiti</module>
         <module>common</module>
     </modules>
 

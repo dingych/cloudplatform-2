@@ -23,6 +23,15 @@ zuul:
     business-consumer:
       path: /business-consumer/**
       serviceId: business-consumer
+    redis-server:
+      path: /redis-server/**
+      serviceId: redis-server
+    sms-service:
+      path: /sms-service/**
+      serviceId: sms-service
+    websocket:
+      path: /websocket/**
+      serviceId: websocket
   host:
     connect-timeout-millis: 600000
     socket-timeout-millis: 600000

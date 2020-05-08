@@ -10,13 +10,6 @@ management:
     web:
       exposure:
         include: "*"
-# 指定注册中心并配置配置名
-#  /{application}/{profile}[/{label}]
-#  /{application}-{profile}.yml
-#  /{label}/{application}-{profile}.yml
-#  /{application}-{profile}.properties
-#  /{label}/{application}-{profile}.properties
-
 spring:
   application:
     name: business
