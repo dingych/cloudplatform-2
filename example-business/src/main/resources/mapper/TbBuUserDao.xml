@@ -3,7 +3,7 @@
 <mapper namespace="com.cloudplatform.examplebusiness.dao.TbBuUserDao">
 
     <resultMap type="com.cloudplatform.examplebusiness.entity.TbBuUser" id="TbBuUserMap">
-        <result property="id" column="id" jdbcType="INTEGER"/>
+        <id property="id" column="id" jdbcType="INTEGER"/>
         <result property="username" column="username" jdbcType="VARCHAR"/>
         <result property="password" column="password" jdbcType="VARCHAR"/>
         <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>

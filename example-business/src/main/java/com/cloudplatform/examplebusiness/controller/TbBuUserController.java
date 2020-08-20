@@ -37,7 +37,7 @@ public class TbBuUserController {
      * @param id 主键
      * @return 单条数据
      */
-    @ApiOperation(value = "查询", notes = "主键查询",response = R.class)
+    @ApiOperation(value = "查询", notes = "主键查询",response = TbBuUser.class)
     @GetMapping("selectOne")
     public R selectOne(Integer id) {
         TbBuUser tbBuUser = this.tbBuUserService.queryById(id);
